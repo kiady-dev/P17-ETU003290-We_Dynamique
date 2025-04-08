@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+version="2.4">
+
+    <servlet>
+        <servlet-name>FormSessionServlet</servlet-name>
+        <servlet-class>milay.FormSessionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FormSessionServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AjoutCredit</servlet-name>
+        <servlet-class>milay.CreditServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AjoutCredit</servlet-name>
+        <url-pattern>/ajoutCredit</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DepenseServlet</servlet-name>
+        <servlet-class>milay.DepenseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DepenseServlet</servlet-name>
+        <url-pattern>/depense</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
